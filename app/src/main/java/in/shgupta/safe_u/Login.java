@@ -25,12 +25,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.loginpage);
         Log.d(TAG, "onCreate: ");
 
 
         SharedPreferences sp= PreferenceManager.getDefaultSharedPreferences(this);
-        String vi=sp.getString("mobileno",null);
-        if(!vi.equals("mobileno")){
+        String vi=sp.getString("mobileno","");
+        if(vi.equals("mobileno")){
 
         Intent i=new Intent(this,danger.class);
         startActivity(i);
