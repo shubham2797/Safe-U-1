@@ -12,12 +12,13 @@ import android.widget.Button;
  */
 
 public class danger extends AppCompatActivity {
-    Button addno = (Button) findViewById(R.id.addno);
+    Button addno;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dangerhome);
+        addno = (Button) findViewById(R.id.addno);
         addno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
