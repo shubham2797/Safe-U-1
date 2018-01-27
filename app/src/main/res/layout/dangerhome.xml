@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="add contacts"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/addno"/>
+        android:id="@+id/addno" />
     <Button
         android:layout_width="200dp"
         android:id="@+id/danger"
