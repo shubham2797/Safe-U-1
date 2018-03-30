@@ -100,17 +100,17 @@ public class danger extends AppCompatActivity {
                SmsManager smsManager = SmsManager.getDefault();
                StringBuffer smsBody = new StringBuffer();
                smsBody.append(Uri.parse(message));
-
-                   android.telephony.SmsManager.getDefault().sendTextMessage("+918527231729", null, smsBody.toString(), null, null);
-               /*
-               else if(models.getNo2()!=null) {
-                   android.telephony.SmsManager.getDefault().sendTextMessage(number2, null, smsBody.toString(), null, null);
+               if(models.getNo1()!=null) {
+                   android.telephony.SmsManager.getDefault().sendTextMessage("+91"+number1, null, smsBody.toString(), null, null);
                }
-               else if(models.getNo3()!=null) {
-                   android.telephony.SmsManager.getDefault().sendTextMessage(number3, null, smsBody.toString(), null, null);
+               if(models.getNo2()!=null) {
+                   android.telephony.SmsManager.getDefault().sendTextMessage("+91"+number2, null, smsBody.toString(), null, null);
+               }
+               if(models.getNo3()!=null) {
+                   android.telephony.SmsManager.getDefault().sendTextMessage("+91"+number3, null, smsBody.toString(), null, null);
                }else{
                    Toast.makeText(danger.this, "please add numbers", Toast.LENGTH_SHORT).show();
-               } */
+               }
            }
        });
     }

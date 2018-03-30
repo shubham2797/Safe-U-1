@@ -46,10 +46,9 @@ public class addcontacts extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences1.edit();
                 editor.putString(PREF_KEY_TEXT,input1.getText().toString());
                 editor.apply();
-                models.setNo1(input1.getText().toString());
+                models.setNo1(txt1.getText().toString());
             }
         });
-
 
         input2 = (EditText) findViewById(R.id.input2);
         btn2 = (Button) findViewById(R.id.btn2);
@@ -66,6 +65,7 @@ public class addcontacts extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences2.edit();
                 editor.putString(PREF_KEY_TEXT,input2.getText().toString());
                 editor.apply();
+                models.setNo2(txt2.getText().toString());
             }
         });
 
@@ -84,6 +84,7 @@ public class addcontacts extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences3.edit();
                 editor.putString(PREF_KEY_TEXT,input3.getText().toString());
                 editor.apply();
+                models.setNo3(txt3.getText().toString());
             }
         });
     }
