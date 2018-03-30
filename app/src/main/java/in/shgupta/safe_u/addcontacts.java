@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class addcontacts extends AppCompatActivity {
+
     EditText input1;
     Button btn1;
     TextView txt1;
@@ -45,8 +46,10 @@ public class addcontacts extends AppCompatActivity {
                 SharedPreferences.Editor editor = preferences1.edit();
                 editor.putString(PREF_KEY_TEXT,input1.getText().toString());
                 editor.apply();
+                models.setNo1(input1.getText().toString());
             }
         });
+
 
         input2 = (EditText) findViewById(R.id.input2);
         btn2 = (Button) findViewById(R.id.btn2);

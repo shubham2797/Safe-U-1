@@ -22,4 +22,16 @@
         android:textColor="@android:color/white"
         android:textStyle="bold"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lat"
+        android:layout_gravity="end"
+        android:id="@+id/ltln"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lon"
+        android:id="@+id/ln"/>
 </FrameLayout>
